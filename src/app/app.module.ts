@@ -17,6 +17,7 @@ import { ProjectsService } from './services/projects.service';
 import { GalleryComponent } from './shared/components/gallery/gallery.component';
 import { FooterTwoComponent } from './layout/footer-two/footer-two.component';
 import { AngularEmojisModule } from 'angular-emojis';
+import { StudiesComponent } from './shared/components/studies/studies.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { AngularEmojisModule } from 'angular-emojis';
     ExperienceComponent,
     DetailComponent,
     GalleryComponent,
-    FooterTwoComponent
+    FooterTwoComponent,
+    StudiesComponent
   ],
   imports: [
     BrowserModule,

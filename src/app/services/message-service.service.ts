@@ -10,6 +10,6 @@ export class MessageServiceService {
   constructor(private _http: HttpClient) { }
 
   sendMessage(body: any):Observable<any> {
-    return this._http.post("http://localhost:3000/formulario", body);
+    return this._http.post("https://app-about-me-dev.herokuapp.com/formulario", body);
     }
 }
