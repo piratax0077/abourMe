@@ -1,0 +1,31 @@
+<div class="detail">
+    <div class="row" style="width: 100%;">
+    <div class="col-md-3">
+        <img src="{{project.imgSrc}}" alt="" class="image_project">
+    </div>
+    <div class="col-md-9">
+        <div class="introduccion">
+            <h4>Descripción</h4>
+            <div class="text-justify">
+                <p>{{project.desc}}</p>
+            </div>
+            
+        </div>
+        <div class="development">
+            <h4>Desarrollo</h4>
+            <div class="text-justify">
+                <p>{{project.dev}}</p>
+            </div>
+            
+        </div>
+        <a href="{{project.url}}" target="_blank">Ir al sitio</a>
+    </div>
+    </div>
+    <div class="clearfix"></div>
+    <app-gallery [images]="images"></app-gallery>
+    <div class="clearfix"></div>
+</div>
+
+
+
+

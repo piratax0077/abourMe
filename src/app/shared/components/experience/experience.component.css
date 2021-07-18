@@ -1,0 +1,67 @@
+.experiencia_aboutMe{
+    width: 90%;
+    margin: 0px auto;
+}
+
+.card{
+    text-align: center !important;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 300ms;
+    overflow: hidden;
+}
+
+.card:hover{
+    background: #0a4275;
+    color: white;
+}
+
+img{
+    width: 100%;
+    height: 200px;
+    transition: all 300ms;
+}
+
+.card-title{
+    transition: all 300ms;
+}
+
+.card-text{
+    transition: all 300ms;
+}
+
+.card:hover img{
+    animation: showImage 300ms linear;
+}
+
+.card:hover .card-title{
+    animation: showTitle 400ms linear;
+}
+
+.card:hover .card-text{
+    animation: showText 400ms linear;
+}
+
+@keyframes showImage {
+    from{
+        transform: translateY(-200%);
+    }to{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes showTitle {
+    from{
+        transform: translateY(-300%);
+    }to{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes showText {
+    from{
+        transform: translateX(-300%);
+    }to{
+        transform: translateX(0%);
+    }
+}

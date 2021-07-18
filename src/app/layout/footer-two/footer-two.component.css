@@ -1,0 +1,30 @@
+.footer-two{
+    width: 90%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.map{
+    text-align: center;
+    align-items: center;
+}
+
+.title-footer{
+    text-transform: uppercase;
+    background-color: #0a4275;
+    color: white;
+    padding: 10px;
+}
+
+ul{
+    list-style: none;
+    text-align: left;
+}
+
+ul li{
+    margin-top: 30px;
+}
+
+ul li a{
+    font-size: 23px;
+}

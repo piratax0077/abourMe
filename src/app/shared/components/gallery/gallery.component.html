@@ -1,0 +1,18 @@
+<div class="gallery">
+
+    <div *ngIf="images.length === 3">
+        <div class="row" style="width: 100%;">
+            <div class="col-md-4" *ngFor="let image of images">
+                <img src="{{image}}" alt="" class="image_dev">
+            </div>
+        </div>
+    </div>
+    <div *ngIf="images.length === 4">
+        <div class="row" style="width: 100%;">
+            <div class="col-md-3" *ngFor="let image of images">
+                <img src="{{image}}" alt="" class="image_dev">
+            </div>
+        </div>
+    </div>
+
+</div>
