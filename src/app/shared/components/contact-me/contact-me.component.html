@@ -1,5 +1,6 @@
 <div class="contact_me">
     <h3>Formulario de contacto</h3>
+    <p>Por favor, no dudes en contactarme <angular-emojis [name]="'sunglasses'" size="30"> </angular-emojis> <angular-emojis [name]="'ok_hand'" size="30"> </angular-emojis> </p>
     <form [formGroup]="frmContactMe" (ngSubmit)="sendEmail()">
         <div class="form-group">
             <label for="">Nombre completo</label>
@@ -24,7 +25,7 @@
                 <div *ngIf="form.comentario.errors.required">Este campo es requerido</div>
             </div>
         </div>
-        <input type="submit" [disabled]="frmContactMe.invalid" value="Enviar" class="btn btn-success">
+        <input type="submit" [disabled]="frmContactMe.invalid" value="Enviar" class="btn_jobs">
     </form>
 </div>
 
