@@ -18,6 +18,7 @@ import { GalleryComponent } from './shared/components/gallery/gallery.component'
 import { FooterTwoComponent } from './layout/footer-two/footer-two.component';
 import { AngularEmojisModule } from 'angular-emojis';
 import { StudiesComponent } from './shared/components/studies/studies.component';
+import { PageConstructionComponent } from './shared/components/page-construction/page-construction.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { StudiesComponent } from './shared/components/studies/studies.component'
     DetailComponent,
     GalleryComponent,
     FooterTwoComponent,
-    StudiesComponent
+    StudiesComponent,
+    PageConstructionComponent
   ],
   imports: [
     BrowserModule,

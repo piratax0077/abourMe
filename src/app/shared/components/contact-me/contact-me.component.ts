@@ -28,6 +28,7 @@ export class ContactMeComponent implements OnInit {
   }
 
   sendEmail(){
+    
       this.api.sendMessage(this.frmContactMe.value).subscribe((data)=>{
         Swal.fire(data.mensaje);
         this.frmContactMe.reset();

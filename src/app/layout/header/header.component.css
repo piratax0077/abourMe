@@ -1,5 +1,10 @@
 nav{
     background-color: #0a4275;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .nav-link{

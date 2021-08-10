@@ -6,16 +6,18 @@ import { ExperienceComponent } from './shared/components/experience/experience.c
 import { HomeComponent } from './shared/components/home/home.component';
 import { DetailComponent } from './shared/components/experience/detail/detail.component';
 import { StudiesComponent } from './shared/components/studies/studies.component';
+import { PageConstructionComponent } from './shared/components/page-construction/page-construction.component';
+import { GuardGuard } from './shared/guard/guard.guard';
 
 const routes: Routes = [
   {path:'',
   component:SkeletonComponent,
   children:[
     {path:'',component:HomeComponent},
-    {path:'contact-me', component:ContactMeComponent},
-    {path:'studies',component: StudiesComponent},
-    {path:'experience/detail/:id', component: DetailComponent},
-    {path:'experience', component: ExperienceComponent}
+    {path:'contact-me', component:ContactMeComponent, canActivate:[GuardGuard]},
+    {path:'studies',component: StudiesComponent, canActivate:[GuardGuard]},
+    {path:'experience/detail/:id', component: DetailComponent, canActivate:[GuardGuard]},
+    {path:'experience', component: ExperienceComponent, canActivate:[GuardGuard]}
   ]}
 ];
 
