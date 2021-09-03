@@ -19,6 +19,7 @@ import { FooterTwoComponent } from './layout/footer-two/footer-two.component';
 import { AngularEmojisModule } from 'angular-emojis';
 import { StudiesComponent } from './shared/components/studies/studies.component';
 import { PageConstructionComponent } from './shared/components/page-construction/page-construction.component';
+import { ScrollToTopComponent } from './layout/scroll-to-top/scroll-to-top.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { PageConstructionComponent } from './shared/components/page-construction
     GalleryComponent,
     FooterTwoComponent,
     StudiesComponent,
-    PageConstructionComponent
+    PageConstructionComponent,
+    ScrollToTopComponent
   ],
   imports: [
     BrowserModule,

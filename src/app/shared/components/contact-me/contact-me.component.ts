@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MessageServiceService } from 'src/app/services/message-service.service';
 import Swal from 'sweetalert2'
@@ -11,6 +11,7 @@ import Swal from 'sweetalert2'
 export class ContactMeComponent implements OnInit {
 
   frmContactMe: FormGroup;
+  @ViewChild('closeLoading') close!: ElementRef;
 
   constructor(public fb: FormBuilder, public api: MessageServiceService) { 
     this.frmContactMe = this.fb.group({
@@ -28,10 +29,14 @@ export class ContactMeComponent implements OnInit {
   }
 
   sendEmail(){
-    
+      
       this.api.sendMessage(this.frmContactMe.value).subscribe((data)=>{
-        Swal.fire(data.mensaje);
-        this.frmContactMe.reset();
+        if(data){
+          this.close.nativeElement.click();
+          Swal.fire(data.mensaje);
+          this.frmContactMe.reset();
+        }
+        
     });
   }
 

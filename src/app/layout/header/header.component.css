@@ -18,3 +18,14 @@ nav{
     
     color: #000 !important;
 }
+
+.activo{
+    background-color: #fff; 
+    color: #000 !important;
+}
+
+.logo{
+    width: 60px;
+    height: 40px;
+    float: right;
+}

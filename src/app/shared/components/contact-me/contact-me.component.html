@@ -25,7 +25,24 @@
                 <div *ngIf="form.comentario.errors.required">Este campo es requerido</div>
             </div>
         </div>
-        <input type="submit" [disabled]="frmContactMe.invalid" value="Enviar" class="btn_jobs">
+        <input type="submit" [disabled]="frmContactMe.invalid" value="Enviar" class="btn_jobs" data-toggle="modal" data-target="#loading">
     </form>
+    <!-- Modal -->
+<div class="modal fade" id="loading" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" #closeLoading>
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="https://cdn.dribbble.com/users/902865/screenshots/4814970/loading-opaque.gif" id="loadingImg" alt="" srcset="">
+          </div>
+        
+      </div>
+    </div>
+  </div>
 </div>
 
