@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkeletonComponent implements OnInit {
 
+  themeColor: any;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  cambiarTema(event: any){
+    this.themeColor = event;
   }
 
 }

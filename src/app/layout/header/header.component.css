@@ -7,6 +7,36 @@ nav{
     z-index: 100;
 }
 
+.nav_red{
+    background-color: red;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    transition: background-color .3s;
+}
+
+.nav_blue{
+    background-color: #0a4275;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    transition: background-color .3s;
+}
+
+.nav_green{
+    background-color: #81cd57;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    transition: background-color .3s;
+}
+
 .nav-link{
     transition: all 300ms;
     border-radius: 10px;
@@ -28,4 +58,5 @@ nav{
     width: 60px;
     height: 40px;
     float: right;
+    border-radius: 900px;
 }

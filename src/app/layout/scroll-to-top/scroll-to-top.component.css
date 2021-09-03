@@ -1,14 +1,61 @@
-.scroll-to-top {
+a {
+    display: inline-block;
+    background-color: #0a4275;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 30px;
     position: fixed;
-    bottom: 15px;
-    right: 15px;
-    opacity: 0;
-    transition: all .2s ease-in-out;
-   }
-   .show-scrollTop {
-    opacity: 1;
-    transition: all .2s ease-in-out;
-    border-radius: 50%;
-    background-color: hotpink;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s;
+    z-index: 1000;
+  }
+  a:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  a:active {
+    background-color: #555;
+  }
 
-   }
+  a::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+
+  .button_green{
+    display: inline-block;
+    background-color: #81cd57;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s;
+    z-index: 1000;
+  }
+
+  .button_red{
+    display: inline-block;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s;
+    z-index: 1000;
+  }

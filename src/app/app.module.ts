@@ -20,6 +20,8 @@ import { AngularEmojisModule } from 'angular-emojis';
 import { StudiesComponent } from './shared/components/studies/studies.component';
 import { PageConstructionComponent } from './shared/components/page-construction/page-construction.component';
 import { ScrollToTopComponent } from './layout/scroll-to-top/scroll-to-top.component';
+import { GoTopComponent } from './shared/components/go-top/go-top.component';
+import { SelectorThemeComponent } from './shared/components/selector-theme/selector-theme.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { ScrollToTopComponent } from './layout/scroll-to-top/scroll-to-top.compo
     FooterTwoComponent,
     StudiesComponent,
     PageConstructionComponent,
-    ScrollToTopComponent
+    ScrollToTopComponent,
+    GoTopComponent,
+    SelectorThemeComponent
   ],
   imports: [
     BrowserModule,
