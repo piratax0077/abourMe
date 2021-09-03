@@ -17,6 +17,45 @@
     color: white;
 }
 
+.card_red{
+    text-align: center !important;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 300ms;
+    overflow: hidden;
+}
+
+.card_red:hover{
+    background: red;
+    color: white;
+}
+
+.card_blue{
+    text-align: center !important;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 300ms;
+    overflow: hidden;
+}
+
+.card_blue:hover{
+    background: #0a4275;
+    color: white;
+}
+
+.card_green{
+    text-align: center !important;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 300ms;
+    overflow: hidden;
+}
+
+.card_green:hover{
+    background: #81cd57;
+    color: white;
+}
+
 img{
     width: 100%;
     height: 200px;

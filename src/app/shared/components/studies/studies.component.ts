@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProjectsService } from 'src/app/services/projects.service';
 declare var $: any;
 
 @Component({
@@ -8,13 +9,15 @@ declare var $: any;
 })
 export class StudiesComponent implements OnInit {
 
-  constructor() { }
+  themeColor: string = '';
+
+  constructor(public apiService: ProjectsService) { }
 
   ngOnInit(): void {
     $("#go_bottom").click(function() {
       $("html, body").animate({ scrollTop: $(document).height() }, "slow");
-    
     });​
+    this.themeColor = this.apiService.getColorTheme();
   }
 
 }

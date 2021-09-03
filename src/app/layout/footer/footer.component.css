@@ -4,14 +4,17 @@ footer{
 
 .footer_red{
     background-color: red;
+    transition: background-color .3s;
 }
 
 .footer_blue{
     background-color: #0a4275; 
+    transition: background-color .3s;
 }
 
 .footer_green{
     background-color: #81cd57;
+    transition: background-color .3s;
 }
 
 a:hover{

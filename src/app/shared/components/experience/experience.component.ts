@@ -10,12 +10,15 @@ import { ProjectsService } from 'src/app/services/projects.service';
 export class ExperienceComponent implements OnInit {
 
   projects: any[];
+  themeColor: string='';
 
   constructor(public apiProjects: ProjectsService) { 
     this.projects = this.apiProjects.getProjects();
+   
   }
 
   ngOnInit(): void {
+    this.themeColor = this.apiProjects.getColorTheme();
   }
 
 }

@@ -10,6 +10,7 @@ export class ProjectsService {
 
   projects: any[] = [];
   project: any;
+  colorTheme: string = 'blue';
 
   constructor() { 
     this.projects = projects;
@@ -21,5 +22,13 @@ export class ProjectsService {
 
   getProjectById(id: any){
    return this.projects.find(p => p.id === id);
+  }
+
+  setColorTheme(color: string){
+    this.colorTheme = color;
+  }
+
+  getColorTheme(){
+    return this.colorTheme;
   }
 }

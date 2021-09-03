@@ -3,7 +3,7 @@ export const projects: any[] = [
     {
         id : "1",
         nombreProyecto: "BankApp",
-        imgSrc: "https://www.bancoripley.cl/img/logo-app-banco.png",
+        imgSrc: "https://img.freepik.com/vector-gratis/edificio-banco-blanco-columnas-bandera-techo-aislado-ilustracion-plana_124715-389.jpg?size=626&ext=jpg",
         url:'https://bank-app-1ec4a.web.app/',
         intro:'Aplicación web que simula una agenda bancaria',
         images:['https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg','https://victorroblesweb.es/wp-content/uploads/2018/01/nodejs-victorroblesweb.png','https://victorroblesweb.es/wp-content/uploads/2018/01/bootstrap-victorroblesweb.png','https://blog.auriboxtraining.com/wp-content/uploads/2018/07/firebase-logo.png'],
