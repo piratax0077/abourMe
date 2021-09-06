@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 import { projects } from '../data/const/projects.const';
 
 @Injectable({
@@ -11,6 +11,7 @@ export class ProjectsService {
   projects: any[] = [];
   project: any;
   colorTheme: string = 'blue';
+  private color$ = new Subject<any>();
 
   constructor() { 
     this.projects = projects;
@@ -26,9 +27,14 @@ export class ProjectsService {
 
   setColorTheme(color: string){
     this.colorTheme = color;
+    this.color$.next(this.colorTheme);
   }
 
   getColorTheme(){
     return this.colorTheme;
+  }
+
+  getColorTheme$(): Observable<string>{
+    return this.color$.asObservable();
   }
 }

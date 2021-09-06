@@ -1,4 +1,5 @@
 import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Observable } from 'rxjs';
 import { ProjectsService } from 'src/app/services/projects.service';
 
 @Component({
@@ -9,6 +10,7 @@ import { ProjectsService } from 'src/app/services/projects.service';
 export class HomeComponent implements OnInit, OnChanges {
 
   themeColor: string = '';
+  themeColor$!: Observable<string>;
 
   constructor(public apiProjects: ProjectsService) { 
     
@@ -19,6 +21,8 @@ export class HomeComponent implements OnInit, OnChanges {
 
   ngOnInit(): void {
     this.themeColor = this.apiProjects.getColorTheme();
+    this.themeColor$ = this.apiProjects.getColorTheme$();
+    this.themeColor$.subscribe(color => this.themeColor = color);
   }
 
 }

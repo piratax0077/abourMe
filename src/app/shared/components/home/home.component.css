@@ -26,6 +26,7 @@
     text-align: center;
     padding: 10px;
     color: #fff;
+    transition: background-color .3s
 }
 
 .title_h4_red{
@@ -33,12 +34,14 @@
     text-align: center;
     padding: 10px;
     color: #fff;
+    transition: background-color .3s
 }
 .title_h4_green{
     background-color: #81cd57;
     text-align: center;
     padding: 10px;
     color: #fff;
+    transition: background-color .3s
 }
 
 .title_h4_blue{
@@ -46,6 +49,15 @@
     text-align: center;
     padding: 10px;
     color: #fff;
+    transition: background-color .3s
+}
+
+.title_h4_auri{
+    background-color: #000;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    transition: background-color .3s
 }
 
 iframe {

@@ -59,3 +59,18 @@ a {
     transition: background-color .3s;
     z-index: 1000;
   }
+
+  .button_auri{
+    display: inline-block;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s;
+    z-index: 1000;
+  }

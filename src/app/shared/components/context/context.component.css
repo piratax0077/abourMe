@@ -1,0 +1,6 @@
+img{
+    width: 150px;
+    margin: 20px;
+    -webkit-box-shadow: 9px 5px 15px 5px #000000; 
+    box-shadow: 9px 5px 15px 5px #000000;
+}

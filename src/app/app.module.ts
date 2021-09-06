@@ -22,6 +22,7 @@ import { PageConstructionComponent } from './shared/components/page-construction
 import { ScrollToTopComponent } from './layout/scroll-to-top/scroll-to-top.component';
 import { GoTopComponent } from './shared/components/go-top/go-top.component';
 import { SelectorThemeComponent } from './shared/components/selector-theme/selector-theme.component';
+import { ContextComponent } from './shared/components/context/context.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { SelectorThemeComponent } from './shared/components/selector-theme/selec
     PageConstructionComponent,
     ScrollToTopComponent,
     GoTopComponent,
-    SelectorThemeComponent
+    SelectorThemeComponent,
+    ContextComponent
   ],
   imports: [
     BrowserModule,
