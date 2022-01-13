@@ -4,6 +4,15 @@
     margin-top: 60px;
 }
 
+.content h3, .content h5{
+    text-align: center;
+}
+
+.content h3{
+    border: 1px solid black;
+    padding: 20px;
+}
+
 img{
     width: 100%;
     -webkit-box-shadow: 9px 5px 15px 5px #000000; 
@@ -11,7 +20,7 @@ img{
 }
 
 .title-h4{
-    background-color: #0a4275;
+    background-color: #0a4175ab;
     text-align: center;
     padding: 10px;
     color: #fff;
@@ -20,6 +29,14 @@ img{
 
 .title_h4_red{
     background-color: red;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    transition: background-color .3s;
+}
+
+.title_page_red{
+    background-color: rgba(6, 21, 243, 0.788);
     text-align: center;
     padding: 10px;
     color: #fff;

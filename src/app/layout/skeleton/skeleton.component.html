@@ -1,5 +1,8 @@
 <app-header [themeColor]="themeColor"></app-header>
 <app-scroll-to-top [themeColor]="themeColor"></app-scroll-to-top>
+
 <app-selector-theme (themeColor)="cambiarTema($event)"></app-selector-theme>
+<app-banner [themeColor]="themeColor"></app-banner>
 <router-outlet></router-outlet>
+
 <app-footer [themeColor]="themeColor"></app-footer>

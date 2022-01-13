@@ -23,6 +23,7 @@ import { ScrollToTopComponent } from './layout/scroll-to-top/scroll-to-top.compo
 import { GoTopComponent } from './shared/components/go-top/go-top.component';
 import { SelectorThemeComponent } from './shared/components/selector-theme/selector-theme.component';
 import { ContextComponent } from './shared/components/context/context.component';
+import { BannerComponent } from './layout/banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { ContextComponent } from './shared/components/context/context.component'
     ScrollToTopComponent,
     GoTopComponent,
     SelectorThemeComponent,
-    ContextComponent
+    ContextComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,

@@ -4,6 +4,10 @@
     margin-top: 60px;
 }
 
+.experiencia_aboutMe h4, .experiencia_aboutMe p{
+    text-align: center;
+}
+
 .card{
     text-align: center !important;
     margin-bottom: 10px;
