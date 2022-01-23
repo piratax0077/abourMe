@@ -51,6 +51,14 @@ img{
     transition: background-color .3s;
 }
 
+.title_page_green{
+    background-color: rgba(192, 125, 37, 0.897);
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    transition: background-color .3s;
+}
+
 .title_h4_blue{
     background-color: #0a4275;
     text-align: center;

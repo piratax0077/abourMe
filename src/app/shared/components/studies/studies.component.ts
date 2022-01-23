@@ -13,6 +13,8 @@ export class StudiesComponent implements OnInit {
   themeColor: string = '';
   themeColor$!: Observable<string>;
 
+  urlImage_1 :string = 'https://franciscorojoweb.netlify.app/assets/img/certificado-javascript.jpg';
+  urlImage_2: string = 'https://franciscorojoweb.netlify.app/assets/img/certificado-master-php.jpg';
   constructor(public apiService: ProjectsService) { }
 
   ngOnInit(): void {
@@ -24,4 +26,7 @@ export class StudiesComponent implements OnInit {
     this.themeColor$.subscribe(color => this.themeColor = color);
   }
 
+  verImagen(){
+    console.log('object')
+  }
 }
